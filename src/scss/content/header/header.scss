@@ -1,0 +1,49 @@
+
+.header {
+    display: flex;
+    margin: 0 -8px;
+    margin-top: -8px;
+
+    border-bottom: 1px solid var(--border-light-gray);
+
+    font-family: var(--font-YS-Text);
+
+    &__logo {
+        margin-right: 20px;
+        padding: 13px 0 13px 16px;
+    }
+
+    &__menu {
+        display: flex;
+        padding: 13px 0;
+
+        border-bottom: 3px solid var(--border-red);
+
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--text-black);
+
+        &_collapsed {
+
+            &:after {
+
+            }
+        }
+
+        &_expanded {
+
+            &:after {
+                
+            }
+        }
+    }
+
+    &__pre-name {
+        margin-right: 4px;
+        font-weight: bold;
+    }
+
+    &__name {
+        font-weight: normal;
+    }
+}

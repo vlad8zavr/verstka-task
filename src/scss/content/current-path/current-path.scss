@@ -1,0 +1,25 @@
+
+.current-path {
+    display: flex;
+    // margin: 0 -8px;
+    margin: 0 20px;
+
+    border-bottom: 1px solid var(--border-light-gray);
+
+    font-family: var(--font-YS-Text);
+    
+    &__content {
+        flex: 1;
+        // margin: 0 20px;
+        // border-bottom: 1px solid var(--border-light-gray);
+    }
+
+    &__text {
+        padding: 16px 0;
+
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: bold;
+        color: var(--text-black);
+    }
+}
