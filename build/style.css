@@ -65,59 +65,76 @@
     font-weight: bold;
     color: var(--text-black); }
 
-.current-info__heading {
+.current-info {
+  font-family: var(--font-YS-Text); }
+  .current-info__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0; }
+  .current-info__name {
+    margin-right: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-black); }
+  .current-info__menu {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-dark-gray); }
+    .current-info__menu:before, .current-info__menu:after {
+      border-right: 2px solid var(--text-dark-gray);
+      content: '';
+      display: block;
+      height: 8px;
+      margin-top: -3px;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      right: -18px;
+      top: 50%;
+      width: 0; }
+    .current-info__menu:after {
+      right: -13px;
+      margin-top: -3px;
+      -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+              transform: rotate(135deg); }
+  .current-info__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--text-black); }
+  .current-info__commit, .current-info__date {
+    margin: 0 6px;
+    color: var(--text-blue); }
+  .current-info__author {
+    margin: 0 0 0 6px; }
+    .current-info__author:first-letter {
+      color: var(--text-red); }
+
+.main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0; }
-
-.current-info__name {
-  margin-right: 6px;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--text-black); }
-
-.current-info__menu {
-  position: relative;
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--text-dark-gray); }
-  .current-info__menu:before, .current-info__menu:after {
-    border-right: 2px solid var(--text-dark-gray);
-    content: '';
-    display: block;
-    height: 8px;
-    margin-top: -3px;
-    position: absolute;
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-    right: -18px;
-    top: 50%;
-    width: 0; }
-  .current-info__menu:after {
-    right: -13px;
-    margin-top: -3px;
-    -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-            transform: rotate(135deg); }
-
-.current-info__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: normal;
-  color: var(--text-black); }
-
-.current-info__commit, .current-info__date {
-  margin: 0 6px;
-  color: var(--text-blue); }
-
-.current-info__author {
-  margin: 0 0 0 6px; }
-  .current-info__author:first-letter {
-    color: var(--text-red); }
+  border-bottom: 1px solid var(--border-light-gray);
+  font-family: var(--font-YS-Text); }
+  .main-menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px 0;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-dark-gray);
+    text-transform: uppercase; }
+    .main-menu__item_active {
+      color: var(--text-black);
+      border-bottom: 3px solid var(--border-red); }
 
