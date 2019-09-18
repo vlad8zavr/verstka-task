@@ -1,0 +1,63 @@
+
+.current-info {
+
+    &__heading {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    &__name {
+        margin-right: 6px;
+
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--text-black);
+    }
+
+    &__menu {
+        position: relative;
+
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--text-dark-gray);
+
+        &:before, &:after {
+            border-right: 2px solid var(--text-dark-gray);
+            content: '';
+            display: block;
+            height: 8px;
+            margin-top: -3px;
+            position: absolute;
+            transform: rotate(45deg);
+            right: -18px;
+            top: 50%;
+            width: 0;
+        }
+        &:after {
+            right: -13px;
+            margin-top: -3px;
+            transform: rotate(135deg);
+        }
+    }
+    &__text {
+        display: flex;
+        padding: 10px 0;
+
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        color: var(--text-black);
+    }
+
+    &__commit, &__date {
+        margin: 0 6px;
+        color: var(--text-blue);
+    }
+
+    &__author {
+        margin: 0 0 0 6px;
+        &:first-letter {
+            color: var(--text-red);
+        }
+    }
+}

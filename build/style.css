@@ -1,0 +1,123 @@
+:root {
+  /* YS Text */
+  --font-YS-Text: 'Arial, Helvetica, sans-serif'; }
+
+:root {
+  /* background */
+  --background-dark-gray: #4F4F4F;
+  --background-light-gray: #F5F5F5;
+  /* border */
+  --border-light-gray: #F2F2F2;
+  --border-gray: #E5E5E5;
+  --border-red: #FF4F49;
+  /* text */
+  --text-black: #000000;
+  --text-dark: #434445;
+  --text-dark-gray: #7F8285;
+  --text-light-gray: #B8BEC3;
+  --text-blue: #1774E9;
+  --text-red: #FF3029; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -8px;
+  margin-top: -8px;
+  border-bottom: 1px solid var(--border-light-gray);
+  font-family: var(--font-YS-Text); }
+  .header__logo {
+    margin-right: 20px;
+    padding: 13px 0 13px 16px; }
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px 0;
+    border-bottom: 3px solid var(--border-red);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-black); }
+  .header__pre-name {
+    margin-right: 4px;
+    font-weight: bold; }
+  .header__name {
+    font-weight: normal; }
+
+.main {
+  margin: 0 -8px;
+  padding: 0 30px; }
+
+.current-path {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid var(--border-light-gray);
+  font-family: var(--font-YS-Text); }
+  .current-path__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .current-path__text {
+    padding: 16px 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: var(--text-black); }
+
+.current-info__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0; }
+
+.current-info__name {
+  margin-right: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-black); }
+
+.current-info__menu {
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-dark-gray); }
+  .current-info__menu:before, .current-info__menu:after {
+    border-right: 2px solid var(--text-dark-gray);
+    content: '';
+    display: block;
+    height: 8px;
+    margin-top: -3px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    right: -18px;
+    top: 50%;
+    width: 0; }
+  .current-info__menu:after {
+    right: -13px;
+    margin-top: -3px;
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
+.current-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: var(--text-black); }
+
+.current-info__commit, .current-info__date {
+  margin: 0 6px;
+  color: var(--text-blue); }
+
+.current-info__author {
+  margin: 0 0 0 6px; }
+  .current-info__author:first-letter {
+    color: var(--text-red); }
+
