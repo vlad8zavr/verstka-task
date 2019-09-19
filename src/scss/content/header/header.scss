@@ -9,13 +9,14 @@
     font-family: var(--font-YS-Text);
 
     &__logo {
-        margin-right: 20px;
-        padding: 13px 0 13px 16px;
+        display: flex;
+        margin: 0 40px 0 32px;
+        padding: 16px 0 17px 0;
     }
 
     &__menu {
         display: flex;
-        padding: 13px 0;
+        padding: 20px 0 14px 0;
 
         border-bottom: 3px solid var(--border-red);
 
@@ -24,16 +25,44 @@
         color: var(--text-black);
 
         &_collapsed {
+            position: relative;
 
+            &:before, &:after {
+                border-right: 2px solid var(--text-black);
+                content: '';
+                display: block;
+                height: 6px;
+                margin-top: -2px;
+                position: absolute;
+                transform: rotate(45deg);
+                right: -14px;
+                top: 50%;
+                width: 0;
+            }
             &:after {
-
+                right: -11px;
+                transform: rotate(135deg);
             }
         }
 
         &_expanded {
+            position: relative;
 
+            &:before, &:after {
+                border-right: 2px solid var(--text-black);
+                content: '';
+                display: block;
+                height: 6px;
+                margin-top: -2px;
+                position: absolute;
+                transform: rotate(-45deg);
+                right: -14px;
+                top: 50%;
+                width: 0;
+            }
             &:after {
-                
+                right: -11px;
+                transform: rotate(-135deg);
             }
         }
     }

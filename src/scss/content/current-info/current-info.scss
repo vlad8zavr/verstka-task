@@ -19,7 +19,7 @@
         position: relative;
 
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
         color: var(--text-dark-gray);
 
         &:before, &:after {
@@ -51,14 +51,11 @@
     }
 
     &__commit, &__date {
-        margin: 0 6px;
+        margin: 0 4px;
         color: var(--text-blue);
     }
 
     &__author {
-        margin: 0 0 0 6px;
-        &:first-letter {
-            color: var(--text-red);
-        }
+        margin: 0 0 0 4px;
     }
 }
