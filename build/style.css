@@ -404,4 +404,10 @@ pre {
   .content-area__date {
     grid-area: date;
     text-align: left; } }
+    @media screen and (max-width: 500px) {
+  .redactor {
+    margin: 16px -16px;
+    border-radius: 0px; }
+    .redactor__head-icon {
+      display: none; } }
 
