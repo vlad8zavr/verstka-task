@@ -68,4 +68,13 @@
             display: none;
         }
     }
+    
+    .branch-list {
+        &__head {
+            display: none;
+        }
+        &__item {
+            flex-direction: column;
+        }
+    }
 }

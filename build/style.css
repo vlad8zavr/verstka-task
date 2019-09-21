@@ -443,7 +443,59 @@ pre {
     font-size: 13px;
     line-height: 20px;
     color: var(--text-dark); }
-  @media screen and (max-width: 920px) {
+
+.branch-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: var(--font-YS-Text);
+  font-size: 14px;
+  line-height: 20px; }
+  .branch-list__head, .branch-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .branch-list__head {
+    padding: 15px 0 8px 0;
+    border-bottom: 1px solid var(--border-current-path);
+    color: var(--text-light-gray); }
+  .branch-list__item {
+    padding: 15px 0 12px 0;
+    border-bottom: 1px solid var(--border-light-gray); }
+    .branch-list__item:last-child {
+      border: none; }
+  .branch-list__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .branch-list__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 8px; }
+  .branch-list__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-black); }
+  .branch-list__commit {
+    font-size: 14px;
+    line-height: 20px; }
+    .branch-list__commit_blue {
+      color: var(--text-blue); }
+    @media screen and (max-width: 920px) {
   .header__logo {
     margin: 0 26px 0 16px; }
   .main {
@@ -483,10 +535,17 @@ pre {
   .content-area__date {
     grid-area: date;
     text-align: left; } }
-  @media screen and (max-width: 500px) {
+    @media screen and (max-width: 500px) {
   .redactor {
     margin: 16px -16px;
     border-radius: 0px; }
     .redactor__head-icon {
-      display: none; } }
+      display: none; }
+  .branch-list__head {
+    display: none; }
+  .branch-list__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
