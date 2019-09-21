@@ -2,7 +2,7 @@
 .current-path {
     display: flex;
 
-    border-bottom: 1px solid var(--border-light-gray);
+    border-bottom: 1px solid var(--border-current-path);
 
     font-family: var(--font-YS-Text);
     
@@ -17,6 +17,15 @@
         line-height: 18px;
         font-weight: bold;
         color: var(--text-black);
+    }
+
+    &__previous {
+        color: var(--text-dark-gray);
+    }
+
+    &__divider {
+        margin: 0 10px 0 10px;
+        color: var(--text-dark-gray);
     }
 
 }

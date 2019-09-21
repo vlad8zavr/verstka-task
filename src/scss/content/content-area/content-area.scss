@@ -9,17 +9,17 @@
 
     &__head, &__item  {
         display: grid;
+        grid-column-gap: 5px;
         grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-
-        border-bottom: 1px solid var(--border-light-gray);
     }
     &__head {
-        padding: 15px 0 8px 0;
-
+        padding: 15px 8px 8px 8px;
+        border-bottom: 1px solid var(--border-current-path);
         color: var(--text-light-gray);
     }
     &__item {
-        padding: 15px 0 12px 0;
+        padding: 15px 8px 12px 8px;
+        border-bottom: 1px solid var(--border-light-gray);
 
         &:last-child {
             border: none;
@@ -28,6 +28,7 @@
 
     &__name {
         display: flex;
+        align-items: center;
     }
     &__commit {
         &_blue {
