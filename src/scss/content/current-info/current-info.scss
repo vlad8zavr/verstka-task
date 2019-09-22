@@ -13,6 +13,10 @@
         font-size: 24px;
         font-weight: bold;
         color: var(--text-black);
+
+        &_normal {
+            font-weight: normal;
+        }
     }
 
     &__menu {
@@ -63,6 +67,40 @@
     &__divider {
         &_right {
             margin-right: 4px;
+        }
+    }
+
+    &__show-files {
+        display: flex;
+
+        padding: 6px 12px;
+        
+        background-color: var(--background-show-files);
+        border-radius: 4px;
+    }
+
+    &__show-files-text {
+        font-size: 13px;
+        line-height: 15px;
+        color: var(--text-black);
+    }
+
+    &__show-files-commit {
+
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 6px;
+    }
+
+    &_layout {
+        &_space-between {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

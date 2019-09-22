@@ -57,6 +57,11 @@
             text-align: left;
         }
     }
+    .redactor {
+        &__body {
+            overflow-x: scroll;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -75,6 +80,12 @@
         }
         &__item {
             flex-direction: column;
+        }
+    }
+
+    .history {
+        &__hash {
+            display: none;
         }
     }
 }
